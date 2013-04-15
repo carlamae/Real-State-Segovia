@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="LN">Latest News</string>
+    <string name="MV">Most Viewed</string>
+    <string name="WN">Whats New?</string>
+    <string name="SA">Show All</string>
+    <string name="Help">Help</string>
+    
+</resources>
