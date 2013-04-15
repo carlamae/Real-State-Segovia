@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
@@ -8,35 +9,29 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="100dp"
-        android:orientation="vertical"
-        android:paddingTop="20dp" >
+        android:orientation="horizontal"
+        android:weightSum="100" >
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/tvLatestNews"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="100" >
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="80"
+            android:gravity="center"
+            android:text="@string/LN" />
 
-            <TextView
-                android:id="@+id/tvLatestNews"
-                android:layout_width="fill_parent"
-                android:layout_height="20dp"
-                android:layout_gravity="center"
-                android:layout_weight="80"
-                android:layout_marginLeft="40dp"
-                android:gravity="center"
-                android:text="Latest News" />
-
-            <Button
-                android:id="@+id/btLatestNews"
-                android:layout_width="60dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:layout_weight="20"
-                android:gravity="center"
-                android:text="Show All"
-                android:textSize="5dp" />
-        </LinearLayout>
+        <Button
+            android:id="@+id/btLatestNews"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="20"
+            android:gravity="center"
+            android:text="@string/SA"
+            android:textSize="5dp"
+            tools:ignore="SpUsage" />
     </LinearLayout>
 
     <LinearLayout
@@ -56,10 +51,10 @@
                 android:layout_width="fill_parent"
                 android:layout_height="20dp"
                 android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
                 android:layout_weight="80"
                 android:gravity="center"
-                android:layout_marginLeft="40dp"
-                android:text="Most Viewed" />
+                android:text="@string/MV" />
 
             <Button
                 android:id="@+id/btMostViewed"
@@ -68,8 +63,9 @@
                 android:layout_gravity="center"
                 android:layout_weight="20"
                 android:gravity="center"
-                android:text="Show All"
-                android:textSize="5dp" />
+                android:text="@string/SA"
+                android:textSize="5dp"
+                tools:ignore="SpUsage" />
         </LinearLayout>
 
         <LinearLayout
@@ -83,6 +79,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="20"
+                android:contentDescription="@string/desc"
                 android:src="@drawable/ic_launcher" />
 
             <ImageButton
@@ -90,6 +87,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="20"
+                android:contentDescription="@string/desc"
                 android:src="@drawable/ic_launcher" />
 
             <ImageButton
@@ -97,6 +95,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="20"
+                android:contentDescription="@string/desc"
                 android:src="@drawable/ic_launcher" />
 
             <ImageButton
@@ -104,6 +103,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="20"
+                android:contentDescription="@string/desc"
                 android:src="@drawable/ic_launcher" />
 
             <ImageButton
@@ -111,6 +111,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="20"
+                android:contentDescription="@string/desc"
                 android:src="@drawable/ic_launcher" />
         </LinearLayout>
     </LinearLayout>
@@ -132,10 +133,10 @@
                 android:layout_width="fill_parent"
                 android:layout_height="20dp"
                 android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
                 android:layout_weight="80"
                 android:gravity="center"
-                android:layout_marginLeft="40dp"
-                android:text="What's New?" />
+                android:text="@string/WN" />
 
             <Button
                 android:id="@+id/btWhatsNew"
@@ -144,8 +145,9 @@
                 android:layout_gravity="center"
                 android:layout_weight="20"
                 android:gravity="center"
-                android:text="Show All"
-                android:textSize="5dp" />
+                android:text="@string/SA"
+                android:textSize="5dp"
+                tools:ignore="SpUsage" />
         </LinearLayout>
 
         <LinearLayout
@@ -159,6 +161,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="20"
+                android:contentDescription="@string/desc"
                 android:src="@drawable/ic_launcher" />
 
             <ImageButton
@@ -166,6 +169,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="20"
+                android:contentDescription="@string/desc"
                 android:src="@drawable/ic_launcher" />
 
             <ImageButton
@@ -173,6 +177,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="20"
+                android:contentDescription="@string/desc"
                 android:src="@drawable/ic_launcher" />
 
             <ImageButton
@@ -180,6 +185,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="20"
+                android:contentDescription="@string/desc"
                 android:src="@drawable/ic_launcher" />
 
             <ImageButton
@@ -187,32 +193,24 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="20"
+                android:contentDescription="@string/desc"
                 android:src="@drawable/ic_launcher" />
         </LinearLayout>
     </LinearLayout>
-	
-  
-    
-  <LinearLayout
+
+    <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="100dp"
         android:orientation="vertical"
         android:paddingTop="20dp" >
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/tvHelp"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tvHelp"
-                android:layout_width="fill_parent"
-                android:layout_height="30dp"
-                android:layout_marginRight="10dp"
-                android:gravity="center"
-                android:text="Help" />
-
-</LinearLayout>
-</LinearLayout>
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="@string/Help" />
+    </LinearLayout>
 
 </LinearLayout>
